@@ -1,0 +1,24 @@
+{
+  "name": "css-grid-responsive-website",
+  "version": "1.0.0",
+  "description": "Responsive website using CSS Grid",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "browser-sync start --server --port 4400 --files '**/*.css, **/*.html, **/*.js' --single index.html --ignore '**/node_modules/*'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bbshub/css-grid-responsive-website.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bbshub/css-grid-responsive-website/issues"
+  },
+  "homepage": "https://github.com/bbshub/css-grid-responsive-website#readme",
+  "devDependencies": {
+    "browser-sync": "^2.24.6"
+  }
+}
