@@ -1,12 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Responsive website using CSS Grid</title>
+    <link rel="stylesheet" href="./assets/css/styles.css">
 </head>
+
 <body>
-    <h1>Responsive website using CSS grid</h1>
+    <div class="container">
+        <div class="top">
+            <header>
+                <h1>Bharat's Taco Cafe</h1>
+                <p>Awesome Tacos!</p>
+            </header>
+            <div class="pc pc1 ">
+                <p class="price">$1.99</p>
+                <p>Tacos</p>
+            </div>
+            <div class="pc pc2">
+                <p class="price">$3.99</p>
+                <p>Kombucha</p>
+            </div>
+        </div>
+        <nav class="menu">
+            <button aria-expanded="false" aria-controls="menu-list">
+                    <span class="open">☰</span>
+                    <span class="close">×</span>    
+                Menu
+            </button>
+            <ul id="menu-list">
+                <li>
+                    <a href="">Tacos</a>
+                </li>
+                <li>
+                    <a href="">Beers</a>
+                </li>
+                <li>
+                    <a href="">Wines</a>
+                </li>
+                <li>
+                    <a href="">Desserts</a>
+                </li>
+                <li>
+                    <a href="">Reservations</a>
+                </li>
+            </ul>
+        </nav>
+        <section class="features">
+           <div class="feature">
+               <span class="icon">&#127790;</span>
+               <h3>Tacos</h3>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, assumenda.</p>
+           </div>
+           <div class="feature">
+               <span class="icon">&#127866;</span>
+               <h3>Beer</h3>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, assumenda.</p>
+           </div>
+           <div class="feature">
+               <span class="icon">&#127863;</span>
+               <h3>Wine</h3>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, assumenda.</p>
+           </div>
+           <div class="feature">
+               <span class="icon">&#127925;</span>
+               <h3>Music</h3>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, assumenda.</p>
+           </div>
+        </section>
+        <section class="about">
+            <img src="./assets/images/queso-taco.png" alt="Taco">
+            <div class="about_details">
+               <h2>Featured Taco</h2>
+               <p>Slim Profile, easy to hold and loaded with cheese.</p>
+                <p>This is the one you have been waiting for</p>
+                <button>Learn More <span>&#8594;</span></button>
+            </div>
+        </section>
+        <div class="gallery">
+
+        </div>
+    </div>
+    <script src="./assets/js/main.js"></script>
 </body>
+
 </html>

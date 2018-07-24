@@ -1,0 +1,164 @@
+:root {
+    --yellow: #ffc600;
+}
+
+html {
+    box-sizing: border-box;
+    height: 100%;
+}
+
+*,
+*:after,
+*:before {
+    box-sizing: inherit;
+}
+
+body {    
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to left, indigo, coral);
+    padding: 50px;
+    grid-template-rows: repeat(5, 1fr);
+}
+
+img {
+    max-width: 100%;
+}
+
+button {
+    background: var(--yellow);
+    border: 0;
+    padding: 10px 20px;
+}
+  
+
+/*-- Top header --*/
+.container {
+    /* height: 100%; */
+    display: grid;
+    border: 1px solid black;
+    grid-gap: 20px;
+}
+
+.top {
+    display: grid;
+    grid-template-areas: 
+        "header header pc1"
+        "header header pc2";
+    grid-gap: 20px;
+}
+
+header {
+    grid-area: header;
+    min-height: 400px;
+    background: white url('../images/taco.jpg') no-repeat;
+    background-size: cover;
+    background-position: bottom right;
+    padding: 50px; 
+    display: flex;
+    flex-direction: column;   
+    justify-content: center;
+    align-items: flex-start;
+}
+
+header * {
+    background: var(--yellow);
+    padding: 5px;
+}
+
+.pc {
+    background: var(--yellow);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pc p {
+    margin: 0;
+}
+
+.pc1 {
+    grid-area: pc1;
+}
+
+.pc2 {
+    grid-area: pc2;
+}
+
+.price {
+    font-size: 60px;
+    font-weight: 300;
+}
+
+/*-- Navigation Menu --*/
+
+.menu ul {
+    list-style: none;
+    display: grid;
+    padding: 0;
+    margin: 0;    
+    margin: 20px 0;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+
+.menu a {
+    background: var(--yellow);
+    display: block;
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-size: 20px;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+[aria-expanded="false"] {
+    display: none;
+}
+
+.features {
+ display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+ grid-gap: 20px;
+}
+
+.feature {
+    padding: 20px;
+    background: white;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.feature p {
+    font-weight: bold;
+    color: rgba(0,0,0,0.5);
+}
+
+.feature .icon {
+    font-size: 50px;
+}
+
+.about {
+    background: white;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    font-weight: bold;
+}
+
+.about_details {
+    align-self: center;
+}
+
+
+
+
